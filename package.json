@@ -1,7 +1,8 @@
 {
   "name": "bulma-fab-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FAB (Floating Action Buttons) for Bulma",
+  "homepage": "https://github.com/olrtg/bulma-fab-button#readme",
   "main": "src/bulma-fab-button.sass",
   "scripts": {
     "deploy": "npm run clean && npm run build",
@@ -10,6 +11,13 @@
     "build-cleancss": "cleancss -o css/bulma-fab-button.min.css css/bulma-fab-button.css",
     "build-sass": "node-sass --output-style expanded --source-map true src/bulma-fab-button.sass css/bulma-fab-button.css",
     "clean": "rimraf css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olrtg/bulma-fab-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/olrtg/bulma-fab-button/issues"
   },
   "keywords": [
     "css",
