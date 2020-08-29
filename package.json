@@ -1,0 +1,41 @@
+{
+  "name": "bulma-fab-button",
+  "version": "1.0.0",
+  "description": "FAB (Floating Action Buttons) for Bulma",
+  "main": "src/bulma-fab-button.sass",
+  "scripts": {
+    "deploy": "npm run clean && npm run build",
+    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma-fab-button.css css/bulma-fab-button.css",
+    "build-cleancss": "cleancss -o css/bulma-fab-button.min.css css/bulma-fab-button.css",
+    "build-sass": "node-sass --output-style expanded --source-map true src/bulma-fab-button.sass css/bulma-fab-button.css",
+    "clean": "rimraf css"
+  },
+  "keywords": [
+    "css",
+    "bulma",
+    "fab",
+    "button",
+    "floating",
+    "action"
+  ],
+  "files": [
+    "css",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": {
+    "name": "José Olórtegui",
+    "email": "jolortegui98@gmail.com",
+    "url": "https://jolortegui.webflow.io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1",
+    "rimraf": "^3.0.2"
+  }
+}

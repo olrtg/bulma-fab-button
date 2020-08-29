@@ -1,0 +1,38 @@
+@import './_initial-variables'
+
+.button.is-floating
+  position: fixed
+  width: $fab-circle-size
+  height: $fab-circle-size
+  right: $fab-h-space
+  bottom: $fab-v-space
+  border-radius: 50%
+  text-align: center
+  font-size: $fab-icon-size
+  box-shadow: $fab-circle-shadow
+  z-index: $fab-elevation
+
+  // positions
+  &.is-left
+    left: $fab-h-space !important
+    bottom: $fab-v-space !important
+
+  &.is-centered
+    left: 50% !important
+    bottom: $fab-v-space !important
+    transform: translateX(-50%) !important
+
+  &.is-right
+    right: $fab-h-space !important
+    bottom: $fab-v-space !important
+
+  // sizes
+  &.is-large
+    width: $fab-circle-size * $fab-large-multiplier !important
+    height: $fab-circle-size * $fab-large-multiplier !important
+    font-size: $fab-icon-size * $fab-large-multiplier !important
+
+  &.is-small
+    width: $fab-circle-size * $fab-small-multiplier !important
+    height: $fab-circle-size * $fab-small-multiplier !important
+    font-size: $fab-icon-size * $fab-small-multiplier !important
