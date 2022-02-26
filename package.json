@@ -5,12 +5,14 @@
   "homepage": "https://github.com/olrtg/bulma-fab-button#readme",
   "main": "src/bulma-fab-button.sass",
   "scripts": {
-    "deploy": "npm run clean && npm run build",
-    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma-fab-button.css css/bulma-fab-button.css",
-    "build-cleancss": "cleancss -o css/bulma-fab-button.min.css css/bulma-fab-button.css",
-    "build-sass": "node-sass --output-style expanded --source-map true src/bulma-fab-button.sass css/bulma-fab-button.css",
-    "clean": "rimraf css"
+    "play": "npm -C playground run dev",
+    "build": "npm run clean && npm run build:all",
+    "build:all": "npm run build:sass && npm run build:autoprefix && npm run build:cleancss",
+    "build:autoprefix": "postcss --use autoprefixer --map false --output css/bulma-fab-button.css css/bulma-fab-button.css",
+    "build:cleancss": "cleancss -o css/bulma-fab-button.min.css css/bulma-fab-button.css",
+    "build:sass": "sass --source-map src/bulma-fab-button.sass css/bulma-fab-button.css",
+    "clean": "rimraf css",
+    "publish": "np"
   },
   "repository": {
     "type": "git",
@@ -40,9 +42,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "clean-css-cli": "^4.3.0",
-    "postcss-cli": "^7.1.1",
+    "@parcel/transformer-sass": "2.3.2",
+    "autoprefixer": "^10.4.2",
+    "clean-css-cli": "^5.5.2",
+    "np": "^7.6.0",
+    "postcss": "^8.4.7",
+    "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
     "sass": "^1.49.9"
   }

@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "devDependencies": {
+    "@parcel/core": "^2.3.2",
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1",
+    "bulma": "^0.9.3"
+  }
+}
