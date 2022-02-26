@@ -13,7 +13,7 @@
     "build:sass": "sass --source-map src/bulma-fab-button.sass css/bulma-fab-button.css",
     "clean": "rimraf css",
     "prepublishOnly": "npm run build",
-    "publish": "np"
+    "publish": "np --no-tests"
   },
   "repository": {
     "type": "git",
