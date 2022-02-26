@@ -10,32 +10,28 @@
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
-
+.button.is-floating.is-left, .button.is-floating.is-centered, .button.is-floating.is-right {
+  bottom: 1.25rem !important;
+}
 .button.is-floating.is-left {
   left: 1.25rem !important;
-  bottom: 1.25rem !important;
 }
-
 .button.is-floating.is-centered {
   left: 50% !important;
-  bottom: 1.25rem !important;
   transform: translateX(-50%) !important;
 }
-
 .button.is-floating.is-right {
   right: 1.25rem !important;
-  bottom: 1.25rem !important;
 }
-
 .button.is-floating.is-large {
   width: 4.6875rem !important;
   height: 4.6875rem !important;
   font-size: 1.875rem !important;
 }
-
 .button.is-floating.is-small {
   width: 2.8125rem !important;
   height: 2.8125rem !important;
   font-size: 1.125rem !important;
 }
+
 /*# sourceMappingURL=bulma-fab-button.css.map */

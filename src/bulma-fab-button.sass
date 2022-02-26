@@ -13,18 +13,20 @@
   z-index: $fab-elevation
 
   // positions
+  &.is-left,
+  &.is-centered,
+  &.is-right
+    bottom: $fab-v-space !important
+
   &.is-left
     left: $fab-h-space !important
-    bottom: $fab-v-space !important
 
   &.is-centered
     left: 50% !important
-    bottom: $fab-v-space !important
     transform: translateX(-50%) !important
 
   &.is-right
     right: $fab-h-space !important
-    bottom: $fab-v-space !important
 
   // sizes
   &.is-large
